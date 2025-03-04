@@ -156,7 +156,7 @@ void loop() {
   PhaseCurrent_s currents = current_sense.getPhaseCurrents();
   phaseA = currents.a * 1000;
   phaseb = currents.b * 1000;
-  motor.move(0.4);
+  motor.move(0.4);		//around 0,6 kg wire tension with an 46mm stepper motor
   
   command.run();
   finish = micros();
